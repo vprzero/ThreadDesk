@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About ThreadDesk — Built in Charleston for Alteration Shops</title>
+  <meta name="description" content="ThreadDesk was built in Charleston, SC after watching talented seamstresses lose business to bad systems — not bad sewing. Here's our story." />
+  <link rel="canonical" href="https://threaddesk.com/about" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>" />
+  <style>
+    .page-hero {
+      background: var(--ink);
+      padding: 140px 24px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1400&q=60&auto=format&fit=crop') center/cover no-repeat;
+      opacity: 0.15;
+    }
+    .page-hero-content { position: relative; max-width: 680px; }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(38px, 6vw, 64px);
+      color: #fff; font-weight: 600; margin-bottom: 20px; line-height: 1.1;
+    }
+    .page-hero h1 em { font-style: italic; color: var(--gold-lt); }
+    .page-hero p { font-size: 18px; color: rgba(255,255,255,0.5); line-height: 1.75; max-width: 560px; }
+
+    .about-section { padding: 80px 0 96px; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    .about-grid:nth-child(even) { direction: rtl; }
+    .about-grid:nth-child(even) > * { direction: ltr; }
+
+    .about-img {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .about-img img { height: 400px; object-fit: cover; }
+
+    .about-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 600;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    .about-text h2 em { font-style: italic; color: var(--gold); }
+    .about-text p { font-size: 16px; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 64px;
+    }
+    .value-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+    .val-icon { font-size: 28px; margin-bottom: 14px; }
+    .val-title { font-family: var(--font-display); font-size: 19px; font-weight: 600; margin-bottom: 8px; }
+    .val-body { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; gap: 32px; }
+      .about-grid:nth-child(even) { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Thread<em>Desk</em></a>
+    <ul class="nav-links">
+      <li><a href="/#how-it-works">How it works</a></li>
+      <li><a href="/#features">What's included</a></li>
+      <li><a href="/#pricing">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-gold" style="padding:10px 22px;font-size:14px">Get started</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <button class="mobile-close" style="position:absolute;top:24px;right:24px;background:none;border:none;color:rgba(255,255,255,0.5);font-size:28px;cursor:pointer">✕</button>
+  <a href="/#how-it-works">How it works</a>
+  <a href="/#features">What's included</a>
+  <a href="/#pricing">Pricing</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-gold">Get started — $39/month</a>
+</div>
+
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <span class="section-tag" style="opacity:1">Our story</span>
+    <h1>Built in Charleston,<br>for <em>Charleston shops.</em></h1>
+    <p>ThreadDesk started with one observation: the most talented seamstresses in the city were getting one-star reviews for problems that had nothing to do with their sewing.</p>
+  </div>
+</div>
+<div class="stitch-divider" aria-hidden="true"></div>
+
+<section class="about-section">
+  <div class="container">
+
+    <div class="about-grid">
+      <div class="about-img reveal">
+        <img
+          src="https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=800&q=80&auto=format&fit=crop"
+          alt="Charleston South Carolina historic downtown street with beautiful architecture"
+          loading="lazy"
+        />
+      </div>
+      <div class="about-text reveal d1">
+        <span class="section-tag">The origin</span>
+        <h2>We saw the <em>problem</em> firsthand.</h2>
+        <p>Walking into alteration shops across Charleston, the pattern was the same everywhere. Phones ringing constantly. Paper tickets stacked on the counter. Customers waiting while the seamstress stopped mid-stitch to look something up.</p>
+        <p>And the reviews? Two and a half, three stars. "Hard to reach." "My order wasn't ready." "Didn't feel welcome." Meanwhile, the actual alterations? Flawless. The craft was never the problem.</p>
+        <p>The problem was that these women were being asked to run a modern customer-service operation with no tools at all.</p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="section-tag">The solution</span>
+        <h2>Software that <em>disappears</em> into the background.</h2>
+        <p>We didn't want to build another complicated dashboard that required a training course. We wanted to build something a 58-year-old woman running a shop alone could set up in five minutes and never think about again.</p>
+        <p>So that's what ThreadDesk is. You set your prices once. You tap one button when a customer walks in. Everything else — intake, payments, follow-ups, reviews — runs automatically.</p>
+        <p>It's not software you learn. It's software that learns your shop and runs it for you.</p>
+      </div>
+      <div class="about-img reveal d1">
+        <img
+          src="https://images.unsplash.com/photo-1583744946564-b52d01e9c467?w=800&q=80&auto=format&fit=crop"
+          alt="Elegant fabric and sewing tools on a beautiful wooden workbench"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <div class="reveal">
+      <span class="section-tag">What we believe</span>
+      <h2 class="section-heading">Our <em>values</em></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal d1">
+        <div class="val-icon">🧵</div>
+        <h3 class="val-title">Craft first, always</h3>
+        <p class="val-body">The seamstress is the product. ThreadDesk exists to protect her time and let her do the work she's actually brilliant at.</p>
+      </div>
+      <div class="value-card reveal d2">
+        <div class="val-icon">🤝</div>
+        <h3 class="val-title">Honest and hands-on</h3>
+        <p class="val-body">We onboard every shop personally. We don't hand you a password and wish you luck. We stay involved.</p>
+      </div>
+      <div class="value-card reveal d3">
+        <div class="val-icon">🏙️</div>
+        <h3 class="val-title">Built for this community</h3>
+        <p class="val-body">ThreadDesk started in Charleston. We know the market, the culture, and the people who make this city's fashion scene run.</p>
+      </div>
+      <div class="value-card reveal d4">
+        <div class="val-icon">✦</div>
+        <h3 class="val-title">Simple on purpose</h3>
+        <p class="val-body">Every feature we didn't add was a decision. Complexity kills adoption. We'd rather do fewer things perfectly than many things adequately.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:72px" class="reveal">
+      <h2 class="section-heading" style="margin-bottom:16px">Ready to see what <em>ThreadDesk</em> does for your shop?</h2>
+      <p style="font-size:16px;color:var(--muted);margin-bottom:32px">It takes five minutes to set up and one month to wonder how you managed without it.</p>
+      <a href="contact.html" class="btn btn-gold">Get started — $39/month</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="stitch-divider" aria-hidden="true"></div>
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">Thread<em>Desk</em></a>
+        <p>Alteration shop software built for the seamstress who just wants to sew. Based in Charleston, SC.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Product</p>
+        <ul class="footer-links">
+          <li><a href="/#how-it-works">How it works</a></li>
+          <li><a href="/#features">What's included</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Legal</p>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 ThreadDesk LLC. All rights reserved.</p>
+      <p class="footer-loc">✦ Made with care in Charleston, SC</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
